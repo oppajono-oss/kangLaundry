@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Clock, MapPin, Truck, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -57,26 +58,51 @@ export default function HeroSection() {
             </div>
 
             <h1 className="font-poppins font-bold text-4xl lg:text-5xl leading-tight mb-6">
-              Cara pakaian bersih, wangi, dan rapi setiap hari tanpa buang waktu cuci–setrika
+              KangLaundry — Jasa Laundry Purwokerto
             </h1>
             
             <p className="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed">
-              KangLaundry bantu keluarga, pekerja, dan mahasiswa di Purwokerto dengan laundry kiloan, satuan, dan express—praktis, higienis, dan terjangkab, supaya kamu bisa fokus ke hal yang lebih penting.
+              KangLaundry bantu keluarga, pekerja, dan mahasiswa di Purwokerto dengan laundry kiloan, satuan, dan express—praktis, higienis, dan terjangkau, supaya kamu bisa fokus ke hal yang lebih penting.
             </p>
+
+            {/* Right Visual */}
+            <motion.div
+              variants={itemVariants}
+              className="relative mb-8"
+            >
+              <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/hero-image.png"
+                    alt="Pelanggan pria tersenyum di outlet laundry KangLaundry"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+                
+                {/* Floating Elements */}
+                <div className="absolute -top-4 -right-4 bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm">
+                  📍 Melayani area Purwokerto
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-white/90 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm backdrop-blur-sm">
+                  Jemput–antar gratis 3 km
+                </div>
+              </div>
+            </motion.div>
 
             {/* Dual CTA */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-semibold px-8 py-6 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 onClick={() => window.open(whatsappUrl, '_blank')}
               >
                 Chat via WhatsApp (Respon cepat)
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg backdrop-blur-sm"
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/30 text-blue-400 hover:bg-white/10 px-8 py-6 text-lg backdrop-blur-sm"
                 onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Lihat Paket & Harga
@@ -96,30 +122,6 @@ export default function HeroSection() {
               </div>
               <span>1.200+ pelanggan</span>
               <span>Buka 7 hari</span>
-            </div>
-          </motion.div>
-
-          {/* Right Visual */}
-          <motion.div 
-            variants={itemVariants}
-            className="relative"
-          >
-            <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                <img 
-                  src="https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Pelanggan pria tersenyum di outlet laundry KangLaundry"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm">
-                📍 Melayani area Purwokerto
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-white/90 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm backdrop-blur-sm">
-                Jemput–antar gratis 3 km
-              </div>
             </div>
           </motion.div>
         </motion.div>

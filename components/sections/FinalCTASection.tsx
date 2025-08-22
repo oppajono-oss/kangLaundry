@@ -54,7 +54,7 @@ export default function FinalCTASection() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white/30 text-white hover:bg-white/10 px-12 py-8 text-xl backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              className="border-white/30 text-blue-400 hover:bg-white/10 px-12 py-8 text-xl backdrop-blur-sm transition-all duration-300 hover:scale-105"
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Lihat Paket & Harga

@@ -1,37 +1,38 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 
 const galleryItems = [
   {
     title: "Hasil cuci satuan premium—detail kerapian kerah & lengan",
-    image: "https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/Hasil cuci satuan premium.png",
     category: "Before/After"
   },
   {
     title: "Fasilitas cuci modern dan higienis", 
-    image: "https://images.pexels.com/photos/6197119/pexels-photo-6197119.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/Fasilitas cuci modern.png",
     category: "Fasilitas"
   },
   {
     title: "Proses sorting dan packing yang rapi",
-    image: "https://images.pexels.com/photos/6197120/pexels-photo-6197120.jpeg?auto=compress&cs=tinysrgb&w=800", 
+    image: "/images/Proses sorting.png",
     category: "Proses"
   },
   {
     title: "Hasil lipatan dan setrika profesional",
-    image: "https://images.pexels.com/photos/6197062/pexels-photo-6197062.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/Hasil lipatan.png",
     category: "Hasil"
   },
   {
     title: "Mesin cuci dan pengering modern",
-    image: "https://images.pexels.com/photos/6197063/pexels-photo-6197063.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/Mesin cuci.png",
     category: "Fasilitas" 
   },
   {
     title: "Tim laundry profesional dan berpengalaman",
-    image: "https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/Tim laundry.png",
     category: "Tim"
   }
 ];
@@ -65,11 +66,13 @@ export default function GallerySection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <Card className="overflow-hidden bg-white border border-slate-200 hover:shadow-xl transition-all duration-300 hover:border-blue-200 group">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img 
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 

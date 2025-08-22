@@ -1,4 +1,5 @@
 import './globals.css';
+import { BackToTopButton } from '@/components/ui/BackToTopButton';
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import { cn } from '@/lib/utils';
@@ -50,6 +51,7 @@ export default function RootLayout({
         "font-inter antialiased bg-slate-50 text-slate-900"
       )}>
         {children}
+        <BackToTopButton />
       </body>
     </html>
   );
