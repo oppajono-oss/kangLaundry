@@ -65,31 +65,6 @@ export default function HeroSection() {
               KangLaundry bantu keluarga, pekerja, dan mahasiswa di Purwokerto dengan laundry kiloan, satuan, dan express—praktis, higienis, dan terjangkau, supaya kamu bisa fokus ke hal yang lebih penting.
             </p>
 
-            {/* Right Visual */}
-            <motion.div
-              variants={itemVariants}
-              className="relative mb-8"
-            >
-              <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                  <Image
-                    src="/images/hero-image.png"
-                    alt="Pelanggan pria tersenyum di outlet laundry KangLaundry"
-                    fill
-                    style={{ objectFit: 'cover' }}
-                  />
-                </div>
-                
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm">
-                  📍 Melayani area Purwokerto
-                </div>
-                <div className="absolute -bottom-4 -left-4 bg-white/90 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm backdrop-blur-sm">
-                  Jemput–antar gratis 3 km
-                </div>
-              </div>
-            </motion.div>
-
             {/* Dual CTA */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
@@ -122,6 +97,31 @@ export default function HeroSection() {
               </div>
               <span>1.200+ pelanggan</span>
               <span>Buka 7 hari</span>
+            </div>
+          </motion.div>
+
+          {/* Right Visual */}
+          <motion.div
+            variants={itemVariants}
+            className="relative mb-8"
+          >
+            <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/hero-image.webp"
+                  alt="Pelanggan pria tersenyum di outlet laundry KangLaundry"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              
+              {/* Floating Elements */}
+              <div className="absolute -top-4 -right-4 bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm">
+                📍 Melayani area Purwokerto
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-white/90 text-blue-900 px-4 py-2 rounded-full font-semibold text-sm backdrop-blur-sm">
+                Jemput–antar gratis 3 km
+              </div>
             </div>
           </motion.div>
         </motion.div>

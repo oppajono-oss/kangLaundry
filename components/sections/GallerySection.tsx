@@ -7,32 +7,32 @@ import { Card } from '@/components/ui/card';
 const galleryItems = [
   {
     title: "Hasil cuci satuan premium—detail kerapian kerah & lengan",
-    image: "/images/Hasil cuci satuan premium.png",
+    image: "/images/Hasil cuci satuan premium.webp",
     category: "Before/After"
   },
   {
-    title: "Fasilitas cuci modern dan higienis", 
-    image: "/images/Fasilitas cuci modern.png",
+    title: "Fasilitas cuci modern dan higienis",
+    image: "/images/Fasilitas cuci modern.webp",
     category: "Fasilitas"
   },
   {
     title: "Proses sorting dan packing yang rapi",
-    image: "/images/Proses sorting.png",
+    image: "/images/Proses sorting.webp",
     category: "Proses"
   },
   {
     title: "Hasil lipatan dan setrika profesional",
-    image: "/images/Hasil lipatan.png",
+    image: "/images/Hasil lipatan.webp",
     category: "Hasil"
   },
   {
     title: "Mesin cuci dan pengering modern",
-    image: "/images/Mesin cuci.png",
-    category: "Fasilitas" 
+    image: "/images/Mesin cuci.webp",
+    category: "Fasilitas"
   },
   {
     title: "Tim laundry profesional dan berpengalaman",
-    image: "/images/Tim laundry.png",
+    image: "/images/Tim laundry.webp",
     category: "Tim"
   }
 ];
