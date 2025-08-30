@@ -72,17 +72,19 @@ export default function AboutSection() {
                     </Badge>
                   ))}
                 </div>
+                <div className="mt-8">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3268884978816!2d109.2274472749964!3d-7.399566992607998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655c6569e1208d%3A0xc3b2e7751d3862b!2sKanglaundry!5e0!3m2!1sen!2sid!4v1716388916301!5m2!1sen!2sid" 
+                    width="100%" 
+                    height="300" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
 
-              {/* NAP Consistency */}
-              <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-2xl">
-                <h3 className="font-poppins font-bold text-lg text-slate-900 mb-2">
-                  KangLaundry • Purwokerto • WA 628978898454
-                </h3>
-                <p className="text-slate-600">
-                  Solusi laundry terpercaya untuk keluarga modern
-                </p>
-              </div>
             </motion.div>
 
             {/* Trust & Payment */}

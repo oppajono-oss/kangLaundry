@@ -27,7 +27,8 @@ export default function HeroSection() {
   const whatsappUrl = "https://wa.me/628978898454?text=Halo%20KangLaundry%2C%20saya%20mau%20laundry.%20Bisa%20jemput%20hari%20ini%3F";
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 overflow-hidden">
+    // Added pt-20 to account for header height
+    <section id="hero" className="relative min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 overflow-hidden pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10"></div>
       

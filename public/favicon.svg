@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Laundry basket shape -->
+  <path d="M20,30 L80,30 L75,70 L25,70 Z" fill="url(#blueGradient)" stroke="#facc15" stroke-width="3"/>
+  
+  <!-- Clothes inside -->
+  <circle cx="40" cy="50" r="5" fill="#facc15"/>
+  <circle cx="60" cy="50" r="5" fill="#facc15"/>
+  <circle cx="50" cy="55" r="5" fill="#facc15"/>
+  
+  <!-- K for Kang -->
+  <text x="50" y="65" font-family="Arial, sans-serif" font-weight="bold" font-size="30" fill="#facc15" text-anchor="middle">K</text>
+</svg>

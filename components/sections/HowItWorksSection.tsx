@@ -33,7 +33,7 @@ export default function HowItWorksSection() {
   const whatsappUrl = "https://wa.me/628978898454?text=Halo%20KangLaundry%2C%20saya%20mau%20laundry.%20Bisa%20jemput%20hari%20ini%3F";
 
   return (
-    <section className="py-16 lg:py-20 bg-slate-50">
+    <section id="how-it-works" className="py-16 lg:py-20 bg-slate-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

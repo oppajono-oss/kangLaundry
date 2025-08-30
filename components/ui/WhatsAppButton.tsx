@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 2, duration: 0.5 }}
-        className="hidden md:block fixed bottom-6 right-6 z-50"
+        className="hidden md:block fixed bottom-6 right-6 z-40"
       >
         <motion.button
           whileHover={{ scale: 1.1 }}
@@ -30,7 +30,7 @@ export default function WhatsAppButton() {
       </motion.div>
 
       {/* Mobile - Sticky Bottom */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 p-4">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 p-4">
         <motion.button
           whileTap={{ scale: 0.95 }}
           onClick={() => window.open(whatsappUrl, '_blank')}

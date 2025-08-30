@@ -34,10 +34,10 @@ export function BackToTopButton() {
       {isVisible && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 p-3 rounded-full shadow-lg z-50"
+          className="hidden md:block fixed bottom-24 right-6 p-3 rounded-full shadow-lg z-40 bg-blue-600 hover:bg-blue-700"
           size="icon"
         >
-          <ChevronUp className="h-6 w-6" />
+          <ChevronUp className="h-6 w-6 text-white" />
         </Button>
       )}
     </>
